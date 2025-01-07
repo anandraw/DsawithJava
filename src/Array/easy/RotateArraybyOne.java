@@ -1,6 +1,6 @@
 package Array.easy;
 
-public interface RotateArraybyOne {
+public class RotateArraybyOne {
     public static void main(String[] args) {
         int[] arr ={1,2,3,4,5};
         roatete(arr);
