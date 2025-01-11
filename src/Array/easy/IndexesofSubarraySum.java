@@ -6,7 +6,7 @@ public class IndexesofSubarraySum {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 7, 5}; int target = 12; //output [2,4] // slect only consucutive ans
         for (Integer i : subarraySum(arr, target)) {
-            System.out.print("["+i+"]");
+            System.out.print(i+" ");
         }
 
 
@@ -27,9 +27,6 @@ public class IndexesofSubarraySum {
                 result.add(i+1);
                 result.add(j+1);
                 break;
-            }
-            if (result.isEmpty()) {
-                result.add(-1);
             }
             }
 
