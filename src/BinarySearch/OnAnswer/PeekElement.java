@@ -2,7 +2,7 @@ package BinarySearch.OnAnswer;
 
 public class PeekElement {
     public static void main(String[] args) {
-        int arr[] = {10,5,20,15};
+        int arr[] = {1,3,6,4,2};
         int n = arr.length;
         System.out.println(peakElement(arr,n));
     }
