@@ -17,7 +17,5 @@ public class ArraySearch {
         }
 
         return -1;
-
     }
-
 }

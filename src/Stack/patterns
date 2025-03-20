@@ -1,0 +1,8 @@
+The monotonic stack pattern is used to efficiently solve problems involving next greater,
+next smaller, previous greater, and previous smaller elements in arrays. It is particularly
+useful in problems involving spans, temperatures, stock prices, and histograms  Trapping Rain Water.
+
+Key Monotonic Stack Patterns
+Increasing Stack → Maintains an increasing order (for Next Smaller / Previous Smaller).
+Decreasing Stack → Maintains a decreasing order (for Next Greater / Previous Greater).
+

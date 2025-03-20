@@ -1,12 +1,11 @@
 package Array.medium;
 
-public class LSubArrWithSum {
+ class LSubArrWithSum {
     public static void main(String[] args) {
         int[] a ={2,3,5,1,9};
         long k=10;
         int len = getlongestSubArray(a,k);
         System.out.println(len);
-
 
     }
     static int getlongestSubArray(int[]a, long k){
@@ -15,7 +14,6 @@ public class LSubArrWithSum {
             int sum=0;
             for (int j = i; j <a.length ; j++) {
                 sum+=a[j];
-
                 if (sum==k){
                     len = Math.max(len,j-i+1);
                 }
