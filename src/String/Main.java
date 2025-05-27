@@ -10,3 +10,10 @@ public class Main {
         System.out.println(r);
     }
 }
+
+// reverse string;
+//check palindrome
+// anagrams
+// pring voles
+// digit form string
+

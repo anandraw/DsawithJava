@@ -1,21 +1,18 @@
 package TestingShastra;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Anand {
-
-     static int a =40;
-
-    public void display(){
-           a++;
-    }
-
     public static void main(String[] args) {
-        Anand a1 = new Anand();
-        a1.a=20;
-        System.out.println(a1.a);
-
-        Anand a2 = new Anand();
-        System.out.println(a2.a);
+        String str ="Anand";
+        str=str.toLowerCase();
+        Map<Character,Integer> map = new HashMap<>();
+        for(char ch:str.toCharArray()){
+            map.put(ch, map.getOrDefault(ch,0)+1);
+        }
+        for(Map.Entry<Character,Integer> entry:map.entrySet()){
+            System.out.println(entry.getKey()+" : "+entry.getValue());
+        }
     }
-
-
 }

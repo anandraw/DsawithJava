@@ -2,8 +2,8 @@ package BinarySearch;
 
 public class SearchInRotatedSortedArray {
     public static void main(String[] args) {
-       int[] nums = {4,5,6,7,0,1,2,3}; int target = 4;
-        int search = search(nums, target);
+       int[] nums = {5 ,6, 1 ,2, 3, 4}; int target = 5;
+        int search = searchs(nums, target);
 
         System.out.println(search);
     }
@@ -23,7 +23,7 @@ public class SearchInRotatedSortedArray {
             if (nums[mid] > nums[right]) {
                 left = mid + 1;
             } else {
-                right = mid-1;
+                right = mid;
             }
         }
 
@@ -47,6 +47,37 @@ public class SearchInRotatedSortedArray {
                 left = mid + 1;
             } else {
                 right = mid - 1;
+            }
+        }
+
+        return -1;
+
+    }
+    static int searchs(int[] arr, int key) {
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (arr[mid] == key) return mid;
+
+            // Left half is sorted
+            if (arr[left] <= arr[mid]) {
+                if (key >= arr[left] && key < arr[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            }
+            // Right half is sorted
+            else {
+                if (key > arr[mid] && key <= arr[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
             }
         }
 

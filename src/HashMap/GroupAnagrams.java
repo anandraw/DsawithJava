@@ -12,21 +12,21 @@ public class GroupAnagrams {
     }
     public static ArrayList<ArrayList<String>> anagrams(String[] arr) {
         // code here
-        int n = arr.length;
         HashMap<String, ArrayList<String>> map = new HashMap<>();
 
-        for(String str: arr){
+        for(String str:arr){
             char[] charArray = str.toCharArray();
             Arrays.sort(charArray);
-            String sortedStr = new String(charArray);
+            String sortedString = new String(charArray);
 
-            if (!map.containsKey(sortedStr)){
-                map.put(sortedStr,new ArrayList<>());
+            if(!map.containsKey(sortedString)){
+                map.put(sortedString, new ArrayList<>());
             }
-            map.get(sortedStr).add(str);
+            map.get(sortedString).add(str);
         }
+
         ArrayList<ArrayList<String>> result = new ArrayList<>();
-        for (List<String> group : map.values()) {
+        for(List<String> group:map.values()){
             result.add(new ArrayList<>(group));
         }
 
