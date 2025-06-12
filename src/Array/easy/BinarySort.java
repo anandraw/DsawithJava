@@ -2,9 +2,8 @@ package Array.easy;
 
 import com.sun.jdi.IntegerValue;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class BinarySort {
     public static void main(String[] args) {
@@ -16,7 +15,6 @@ public class BinarySort {
 
     }
     public static void binSort(int[] arr) {
-            // Your code goes here
             List<Integer> list = new ArrayList<>();
             for(int num:arr){
                 if(num>=0){
@@ -33,5 +31,5 @@ public class BinarySort {
             for(int i=0;i<arr.length;i++){
                 arr[i]=list.get(i);
             }
-        }
+    }
 }

@@ -22,6 +22,5 @@ public class AlternatePositiveNegative {
            arr.set(2*i, pos.get(i));
            arr.set(2*i+1, nes.get(i));
         }
-
     }
 }

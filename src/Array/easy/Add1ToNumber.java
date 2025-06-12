@@ -6,9 +6,9 @@ import java.util.Collections;
 public class Add1ToNumber {
     public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(0);
-        arr.add(0);
-        arr.add(1);   // when i add 1 to this no so ouput will be 130 ok.
+        arr.add(1);
+        arr.add(3);
+        arr.add(9);   // when i add 1 to this no so ouput will be 130 ok.
         ArrayList<Integer> result = addOneToNumber(arr);
         System.out.println(result);
 
@@ -35,6 +35,7 @@ public class Add1ToNumber {
         }
         Collections.reverse(arr);
         return arr;
+
     }
 
     public static ArrayList<Integer> add1ToNumber(ArrayList<Integer> arr){
