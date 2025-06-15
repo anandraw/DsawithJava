@@ -1,9 +1,18 @@
 package BinarySearch;
 
+import java.util.TreeSet;
+
 public class FindCeilInArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 8, 10, 10, 12, 19}; // Sorted array
-        int target = 20;
+        int target = 13;
+//        TreeSet<Integer> ts = new TreeSet<>();  using in build methode
+//        for (int ar:arr){
+//            ts.add(ar);
+//        }
+//        System.out.println(ts.ceiling(target));
+        //System.out.println(ts.flore(target));
+
         int ceilIndex = findCeil(arr, target);
         if (ceilIndex != -1) {
             System.out.println("Ceil of " + target + " is " + arr[ceilIndex]);

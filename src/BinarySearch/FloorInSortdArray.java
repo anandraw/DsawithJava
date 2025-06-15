@@ -1,8 +1,17 @@
 package BinarySearch;
 
+import java.util.TreeSet;
+
 public class FloorInSortdArray {
     public static void main(String[] args) {
         int  arr[] = {1, 2, 8, 10, 11, 12, 19}, k = 5;
+
+        TreeSet<Integer> ts = new TreeSet<>();
+        for (int ar:arr){
+            ts.add(ar);
+        }
+        System.out.println(ts.ceiling(k));
+
         int ans = findFloor(arr,k);
         System.out.println(ans);
     }
