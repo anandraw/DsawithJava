@@ -4,10 +4,19 @@ package JavaDevImpQues.String;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class StringIsUniqueOrNot {
     public static void main(String[] args) {
+
         String word="abcd";
+        Set<Character> collect = word.chars().mapToObj(c -> (char) c).collect(Collectors.toSet());
+        if (collect.size()==word.length()){
+            System.out.println("is unique char string");
+        }else{
+            System.out.println("not a unique");
+        }
+
         boolean ans=isUnique(word);
         System.out.println(ans);
     }
