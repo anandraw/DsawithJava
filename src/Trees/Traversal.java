@@ -13,9 +13,9 @@ public class Traversal {
         //    4   5
         Node root = new Node(1);
         root.left = new Node(2);
-        root.rigth = new Node(3);
+        root.right = new Node(3);
         root.left.left = new Node(4);
-        root.left.rigth = new Node(5);
+        root.left.right = new Node(5);
 
         System.out.println("Inorder Traversal:");
         inorder(root); // left-root-right
@@ -31,7 +31,7 @@ public class Traversal {
         if (node==null) return;
         inorder(node.left);
         System.out.print(node.val+"->");
-        inorder(node.rigth);
+        inorder(node.right);
     }
 
     public static void preorder(Node node){
@@ -39,14 +39,14 @@ public class Traversal {
 
         System.out.print(node.val+"->");
         preorder(node.left);
-        preorder(node.rigth);
+        preorder(node.right);
     }
 
     public static void postorder(Node node){
         if (node==null) return;
 
         postorder(node.left);
-        postorder(node.rigth);
+        postorder(node.right);
         System.out.print(node.val+"->");
     }
 }

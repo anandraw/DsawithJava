@@ -1,7 +1,6 @@
 package Trees;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 // using stack
@@ -26,9 +25,9 @@ public class ItretorPreorderTraversal {
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
-        root.rigth = new Node(3);
+        root.right = new Node(3);
         root.left.left = new Node(4);
-        root.left.rigth = new Node(5);
+        root.left.right = new Node(5);
 
         ItretorPreorderTraversal i = new ItretorPreorderTraversal();
         ArrayList<Integer> result = i.preOrder(root);
@@ -49,8 +48,8 @@ public class ItretorPreorderTraversal {
         while (!stack.isEmpty()){
            root=stack.pop();
            ans.add(root.val);
-           if (root.rigth!=null){
-               stack.push(root.rigth);
+           if (root.right !=null){
+               stack.push(root.right);
            }
            if (root.left!=null){
                stack.push(root.left);

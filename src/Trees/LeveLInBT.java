@@ -15,9 +15,9 @@ public class LeveLInBT {
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
-        root.rigth = new Node(3);
+        root.right = new Node(3);
         root.left.left = new Node(4);
-        root.left.rigth = new Node(5);
+        root.left.right = new Node(5);
 
         LeveLInBT leveLInBT = new LeveLInBT();
         ArrayList<ArrayList<Integer>> result = leveLInBT.levelOrder(root);
@@ -48,8 +48,8 @@ public class LeveLInBT {
                 if (node.left != null) {
                     queue.add(node.left);
                 }
-                if (node.rigth != null) {
-                    queue.add(node.rigth);
+                if (node.right != null) {
+                    queue.add(node.right);
                 }
             }
             ans.add(currLevel);

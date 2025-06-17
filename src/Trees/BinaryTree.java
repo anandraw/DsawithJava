@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 class Node{
     int val;
-    Node left,rigth;
+    Node left, right;
 
      Node(int data){
          this.val=data;
-         left=rigth=null;
+         left=right=null;
      }
 }
 public class BinaryTree {
@@ -35,8 +35,8 @@ public class BinaryTree {
         if (right) {
             System.out.print("Enter the value of right node of " + node.val + ": ");
             int value = scanner.nextInt();
-            node.rigth = new Node(value);
-            printlate(scanner, node.rigth);
+            node.right = new Node(value);
+            printlate(scanner, node.right);
         }
     }
     public void display(){
@@ -50,7 +50,7 @@ public class BinaryTree {
 
         System.out.println(indent + node.val);
         displayTree(node.left, indent + "  ");
-        displayTree(node.rigth, indent + "  ");
+        displayTree(node.right, indent + "  ");
     }
 
     public static void main(String[] args) {
