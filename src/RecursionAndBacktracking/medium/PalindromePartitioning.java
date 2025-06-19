@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PalindromePartitioning {
     public static void main(String[] args) {
-        String s = "aab";
+        String s = "geeks";
         List<List<String>> partition = partition(s);
         System.out.println(partition);
 
