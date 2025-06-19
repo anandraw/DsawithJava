@@ -46,12 +46,12 @@ public class CaseSpecificSortingOfString {
         for(int i=0; i<s.length();i++){
             char ch = s.charAt(i);
             if(Character.isUpperCase(ch)){
-                result.append(upperChar.getFirst()); // upperChar.get(0)
-                upperChar.removeFirst();  // upperChar.remove(0)
+                result.append(upperChar.get(0)); // upperChar.get(0)
+                upperChar.remove(0);  // upperChar.remove(0)
             }
             else{
-                result.append(lowerChar.getFirst());
-                lowerChar.removeFirst();
+                result.append(lowerChar.get(0));
+                lowerChar.remove(0);
             }
         }
         return result.toString();
