@@ -12,6 +12,7 @@ public class StringIsUniqueOrNot {
     public static void main(String[] args) {
 
         String word="abcd";
+
         Set<Character> collect = word.chars().mapToObj(c -> (char) c).collect(Collectors.toSet());
         if (collect.size()==word.length()){
             System.out.println("is unique char string");

@@ -1,6 +1,4 @@
 package TestingShastra;
 
-
-public class Person {
-
+public class Emp {
 }
