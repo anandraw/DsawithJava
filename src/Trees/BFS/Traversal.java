@@ -1,4 +1,4 @@
-package Trees;
+package Trees.BFS;
 
 // This is BFS : level by level
 public class Traversal {

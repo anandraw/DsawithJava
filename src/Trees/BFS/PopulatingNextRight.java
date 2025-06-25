@@ -1,4 +1,4 @@
-package Trees;
+package Trees.BFS;
 
 //116. Populating Next Right Pointers in Each Node
 class MyNode{

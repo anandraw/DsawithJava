@@ -1,4 +1,4 @@
-package Trees;
+package Trees.BFS;
 
 //101.Symmetric Tree(mirror img)
 

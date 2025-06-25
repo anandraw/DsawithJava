@@ -1,4 +1,4 @@
-package Trees;
+package Trees.BFS;
 
 //993. Cousins in Binary Tree
 //2641

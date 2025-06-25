@@ -1,4 +1,4 @@
-package Trees;
+package Trees.BFS;
 
 import java.util.*;
 

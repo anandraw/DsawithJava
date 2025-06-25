@@ -1,4 +1,4 @@
-package Trees;
+package Trees.BFS;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -12,8 +12,8 @@ import java.util.Queue;
 //           /  \
 //           4    5
 
-//Output: 1 2 4
-public class LeftSideViewOFBT {
+//Output: 1 3 5
+public class RightSideViewOFBT {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -35,7 +35,7 @@ public class LeftSideViewOFBT {
             int levelSize = queue.size();
             for (int i = 0; i <levelSize ; i++) {
                 TreeNode currNode = queue.poll();
-                if (i==0){  // this my last node
+                if (i==levelSize-1){  // this my last node
                     ans.add(currNode.val);
                 }
                 if (currNode.left!=null) queue.offer(currNode.left);
