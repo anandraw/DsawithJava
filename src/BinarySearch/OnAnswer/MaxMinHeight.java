@@ -1,10 +1,10 @@
 package BinarySearch.OnAnswer;
 
-import java.util.Arrays;
-
 public class MaxMinHeight {
     public static void main(String[] args) {
         int arr[]={2,3,4,5,1}; int w=2,k=2;
+        int ans =maxMinHeight(arr,k,w);
+        System.out.println(ans);
     }
     public static int maxMinHeight(int[] arr, int k, int w) {
         int n = arr.length;
