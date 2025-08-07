@@ -1,4 +1,4 @@
-package Pattern;
+package Pattern.start;
 
 public class DownTraingle {
     public static void main(String[] args) {

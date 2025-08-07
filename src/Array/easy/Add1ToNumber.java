@@ -3,7 +3,7 @@ package Array.easy;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Add1ToNumber {
+public class   Add1ToNumber {
     public static void main(String[] args) {
         ArrayList<Integer> arr = new ArrayList<>();
         arr.add(1);

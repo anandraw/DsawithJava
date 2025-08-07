@@ -1,4 +1,4 @@
-package Pattern;
+package Pattern.number;
 
 public class OneZeroTraingle {
     public static void main(String[] args) {

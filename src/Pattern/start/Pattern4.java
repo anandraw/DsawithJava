@@ -1,4 +1,9 @@
-package Pattern;
+package Pattern.start;
+
+// *
+// *  *
+// *  *  *
+// *  *  *  *
 
 public class Pattern4 {
     public static void main(String[] args) {
