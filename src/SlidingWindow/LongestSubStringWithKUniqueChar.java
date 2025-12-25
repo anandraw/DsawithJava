@@ -8,6 +8,8 @@ public class LongestSubStringWithKUniqueChar {
         int ans=longestKSubstr(s,k);
         System.out.println(ans);
     }
+
+
     public static int longestKSubstr(String s, int k) {
         int n = s.length();
         int i = 0, j = 0;

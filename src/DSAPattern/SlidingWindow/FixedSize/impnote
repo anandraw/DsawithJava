@@ -1,0 +1,19 @@
+- slightly easy
+- int left = 0, right = 0;
+  int windowSum = 0;
+
+  while (right < n) {
+      windowSum += arr[right];
+
+      if (right - left + 1 == k) {
+          // answer update
+          windowSum -= arr[left];
+          left++;
+      }
+      right++;
+  }
+
+- Max sum subarray of size k
+- Average of subarrays of size k
+- First negative number in every window of size k
+
